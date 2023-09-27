@@ -1,0 +1,182 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+/* tektur-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Tektur";
+  font-style: normal;
+  font-weight: 400;
+  src: url("./assets/fonts/tektur-v3-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* tektur-500 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Tektur";
+  font-style: normal;
+  font-weight: 500;
+  src: url("./assets/fonts/tektur-v3-latin-500.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+@font-face {
+  font-family: "OCR-A";
+  src: url("./assets/fonts/OCR-A.ttf");
+}
+@font-face {
+  font-family: "Kredit";
+  src: url("./assets/fonts/kredit.otf");
+}
+@font-face {
+  font-family: "Kredit-back";
+  src: url("./assets/fonts/kredit-back.otf");
+}
+@font-face {
+  font-family: "Kredit-front";
+  src: url("./assets/fonts/kredit-front.otf");
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+.card-body-nordea {
+  display: flex;
+  height: 230px;
+  width: 400px;
+  background-image: url("/src/assets/nordea.png");
+}
+.card-body-handelsbanken {
+  display: flex;
+  height: 230px;
+  width: 400px;
+  background-image: url("/src/assets/handelsbanken.png");
+}
+.card-body-americanexpress {
+  display: flex;
+  height: 230px;
+  width: 400px;
+  background-image: url("/src/assets/americanexpress.png");
+}
+
+.new-card-div {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+}
+.card-blip {
+  height: 30px;
+  width: 50px;
+  margin-right: 280px;
+}
+.card-chip {
+  height: 30px;
+  width: 50px;
+}
+.card-logo {
+  margin-top: 5px;
+  height: 30px;
+}
+.card-holder-div {
+  height: 50px;
+}
+.card-number-div {
+  height: 50px;
+  margin: 45px 0 0 20px;
+}
+.vendor-logo {
+  width: 50px;
+}
+.blip-logo {
+  height: 30px;
+  rotate: 270deg;
+}
+.chip-logo {
+  width: 30px;
+}
+.card-info {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 45px;
+  margin-top: 25px;
+}
+.card-cardholder {
+  width: 100px;
+  font-size: 10px;
+  margin: 0 0 0 17px;
+}
+
+.card-name {
+  font-family: Tektur;
+  margin: 0 0 0 20px;
+}
+.card-number {
+  margin: 0;
+  font-size: 36px;
+  font-weight: 400;
+  font-family: Kredit-front;
+}
+.card-valid-div {
+  height: 50px;
+}
+.card-validthru {
+  font-size: 10px;
+  margin: 0;
+}
+.card-validdate {
+  margin: 0;
+  font-family: Tektur;
+}
+
+.card-card-card {
+  height: 50px;
+}
+.card-card {
+  display: flex;
+  height: 250px;
+  width: 450px;
+}
+.card-information {
+  margin-top: 60px;
+}
+.vendor-logo {
+  height: 100%;
+  width: 100%;
+  z-index: 2;
+}
+#deleteBtn{
+all: unset;
+margin: 0 0 210px 5px;
+}
+.card-ul > div:nth-child(1){
+  z-index: 1;
+  position: relative;
+  transform: rotate(-10deg);
+  top: 0;
+}
+.card-ul > div:nth-child(2){
+  z-index: 2;
+  position: relative;
+  
+  top: -170px;
+}
+.card-ul > div:nth-child(3){
+  z-index: 3;
+  position: relative;
+  transform: rotate(10deg);
+  top: -350px;
+}
+
+.card-ul > div:hover{
+  transform: scaleY(1.1);
+}
+.new-card-div button{
+  margin-top: 10px;
+}
+label{
+  text-align: start;
+}
