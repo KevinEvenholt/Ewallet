@@ -29,10 +29,10 @@ const cardsSlice = createSlice({
       state.vendor = action.payload;
     },
     setActive: (state, action) => {
-      const cardIndex = action.payload; // Assuming you're passing the card index as payload
+      const cardIndex = action.payload; 
       state.cards = state.cards.map((card, i) => ({
         ...card,
-        active: i === cardIndex, // Set active to true only for the clicked card
+        active: i === cardIndex, 
       }));
     },
     deleteCard: (state, action) => {

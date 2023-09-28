@@ -29,21 +29,25 @@ export const CardList = () => {
           if (!card.active) {
             return (
               <>
+              <div className="flex">
+
                 <div
                   className="card-card"
                   key={i}
                   onClick={() => dispatch(setActive(i))}
                 >
                   <Card key={i} {...card} />
+                </div>
                 <button
                   id="deleteBtn"
                   onClick={() => {
                     dispatch(deleteCard(i));
                   }}
                 >
+                  
                  <i className="fa-solid fa-x"></i>
                 </button>
-                </div>
+              </div>
               </>
             );
           }
